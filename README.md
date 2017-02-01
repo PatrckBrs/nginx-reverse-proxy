@@ -2,13 +2,14 @@
 Nginx Reverse Proxy
 
 Run Reverse Proxy like this :
-
+```
 docker run -p 80:80 -p 443:443 -v ${PWD}/sites:/etc/nginx/sites-available -d nginx-reverse-proxy
-
+```
 Push your configuration website file into ${PWD}/sites
 
 Examples :
 
+```
 upstream ghost {
         server 192.168.0.1:2368;
         server 192.168.0.2:2368 backup;
@@ -34,3 +35,4 @@ server {
                 internal;
         }
 }
+```
