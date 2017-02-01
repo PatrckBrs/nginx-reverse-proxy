@@ -3,9 +3,9 @@ FROM alpine:latest
 LABEL maintainer Patrick Brunias <patrick@brunias.org>
 
 RUN apk update && \
-	apk add nginx bash
+    apk add nginx bash
 
-
+# Created some directory
 RUN mkdir /data /etc/nginx/sites-available /etc/nginx/sites-enabled /var/www/html
 
 # COPY nginx/nginx.conf
