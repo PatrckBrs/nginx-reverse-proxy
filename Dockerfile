@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer Patrick Brunias <patrick@brunias.org>
+LABEL maintainer "Patrick Brunias <patrick@brunias.org>"
 
 RUN apk update && \
     apk add nginx bash
